@@ -24,20 +24,6 @@ The system allows users to upload invoice files and automatically extract detail
 * PDF Processing
 * REST API
 
-## 📂 Project Structure
-
-```
-invoice-extractor
-│
-├── backend
-│   ├── routers
-│   ├── services
-│   └── main.py
-│
-├── frontend_streamlit.py
-├── requirements.txt
-└── README.md
-```
 
 ## ⚙️ Installation
 
@@ -102,4 +88,5 @@ streamlit run frontend_streamlit.py
 ## 👩‍💻 Author
 
 Pratiksha Hole
+
 
