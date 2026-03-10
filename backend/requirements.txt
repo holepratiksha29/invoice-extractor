@@ -1,0 +1,22 @@
+msal
+requests
+pdf2image
+pillow
+paddleocr==2.7.0.3
+opencv-python==4.6.0.66
+numpy==1.26.4
+pydantic_settings
+PyMuPDF==1.20.2
+paddlepaddle 2.6.2
+Python 3.10
+paddleocr 2.7.0.3
+
+fastapi
+uvicorn
+paddleocr
+paddlepaddle
+pdf2image
+pillow
+numpy
+opencv-python
+python-multipart
