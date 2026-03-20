@@ -31,7 +31,7 @@ if uploaded_file is not None:
         try:
             # Send POST request to FastAPI API endpoint
             response = requests.post(
-                "http://127.0.0.1:8000/upload-invoice",
+                "https://invoice-extractor-5bnj.onrender.com/upload-invoice",
                 files=files
             )
 
