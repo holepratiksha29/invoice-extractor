@@ -6,5 +6,4 @@ pillow
 python-multipart
 requests
 pytesseract
-pdf2image
 PyMuPDF
