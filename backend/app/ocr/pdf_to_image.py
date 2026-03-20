@@ -5,7 +5,7 @@ from pathlib import Path                  # Helps manage file paths in a clean w
 # Folder where converted images will be stored
 IMAGES_DIR = "app/data/images"
 
-# Create the directory if it does not already exist
+# Create the directory if it does not already exist   
 os.makedirs(IMAGES_DIR, exist_ok=True)
 
 # Get the base directory of the project
