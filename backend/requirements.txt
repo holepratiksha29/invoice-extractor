@@ -5,7 +5,6 @@ numpy
 pillow
 python-multipart
 requests
-pdf2image
 PyMuPDF
 paddleocr
 paddlepaddle
