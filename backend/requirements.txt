@@ -1,10 +1,9 @@
 fastapi
 uvicorn
-paddleocr==2.7.0.3
-opencv-python==4.6.0.66
-numpy==1.26.4
+paddleocr
+paddlepaddle
+opencv-python
+numpy
 pillow
-pdf2image
-PyMuPDF==1.20.2
 python-multipart
 requests
