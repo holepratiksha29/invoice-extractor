@@ -1,9 +1,8 @@
 fastapi
 uvicorn
-paddleocr
-paddlepaddle
 opencv-python
 numpy
 pillow
 python-multipart
 requests
+pytesseract
