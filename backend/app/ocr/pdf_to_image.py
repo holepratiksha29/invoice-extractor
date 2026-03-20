@@ -1,15 +1,20 @@
-import fitz  # PyMuPDF
+from pdf2image import convert_from_path
 import os
 
 def pdf_to_images(pdf_path):
-    images = []
+    
+    poppler_path = os.path.join(os.getcwd(), "app", "tools", "poppler", "bin")
 
-    pdf = fitz.open(pdf_path)
+    images = convert_from_path(
+        pdf_path,
+        poppler_path=poppler_path
+    )
 
-    for i, page in enumerate(pdf):
-        pix = page.get_pixmap()
-        img_path = f"uploads/page_{i}.png"
-        pix.save(img_path)
-        images.append(img_path)
+    image_paths = []
 
-    return images
+    for i, img in enumerate(images):
+        path = f"uploads/page_{i}.png"
+        img.save(path, "PNG")
+        image_paths.append(path)
+
+    return image_paths
