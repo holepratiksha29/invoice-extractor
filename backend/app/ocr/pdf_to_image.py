@@ -13,3 +13,4 @@ def pdf_to_images(pdf_path):
         image_paths.append(path)
 
     return image_paths
+
