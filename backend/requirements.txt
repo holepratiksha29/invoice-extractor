@@ -6,6 +6,4 @@ pillow
 python-multipart
 requests
 PyMuPDF
-paddleocr
-paddlepaddle
-pytesseract 
+
