@@ -1,17 +1,11 @@
-from paddleocr import PaddleOCR
+import pytesseract
+from PIL import Image
 
-# Initialize OCR (only once)
-ocr = PaddleOCR(use_angle_cls=True, lang='en')
-
-# Function to extract text from an image
 def extract_text(image_path):
+    img = Image.open(image_path)
+    text = pytesseract.image_to_string(img)
 
-    result = ocr.ocr(image_path)
-
-    text_list = []
-
-    for line in result:
-        for word in line:
-            text_list.append(word[1][0])
+    text_list = text.split("\n")
+    text_list = [line for line in text_list if line.strip() != ""]
 
     return text_list
