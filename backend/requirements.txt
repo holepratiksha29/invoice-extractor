@@ -7,4 +7,4 @@ python-multipart
 requests
 PyMuPDF
 paddleocr
-paddlepaddle
+paddlepaddle==2.6.1
